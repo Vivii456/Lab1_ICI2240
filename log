@@ -141,3 +141,9 @@ exercises.c:81:14: error: invalid type argument of unary ‘*’ (have ‘int’
    81 |          if (*n == elem)
       |              ^~
 c151ebe
+Thu Mar 19 07:13:44 PM UTC 2026: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  2|3
+total_score: 30/70
+a789517
