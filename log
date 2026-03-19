@@ -35,3 +35,23 @@ Thu Mar 19 07:00:58 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 9241b35
+Thu Mar 19 07:06:17 PM UTC 2026: 
+ exercises.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:78:14: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   78 |    int num = first(L);
+      |              ^~~~~
+exercises.c:79:15: error: comparison between pointer and integer [-Werror]
+   79 |    while (num != NULL)
+      |               ^~
+exercises.c:81:14: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   81 |          if ((int*)num == elem)
+      |              ^
+exercises.c:81:24: error: comparison between pointer and integer [-Werror]
+   81 |          if ((int*)num == elem)
+      |                        ^~
+cc1: all warnings being treated as errors
+d8f4585

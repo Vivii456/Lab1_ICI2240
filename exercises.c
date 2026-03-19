@@ -60,7 +60,9 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+   int suma;
+   
+   return suma;
 }
 
 /*
@@ -73,7 +75,15 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+   int num = first(L);
+   while (num != NULL)
+      {
+         if ((int*)num == elem)
+         {
+            popCurrent(L);
+         }
+         next(L);
+      }
 }
 
 /*
