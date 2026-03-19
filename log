@@ -185,3 +185,17 @@ exercises.c:105:15: error: ‘auxiliar’ undeclared (first use in this function
       |               ^~~~~~~~
 exercises.c:105:15: note: each undeclared identifier is reported only once for each function it appears in
 121c046
+Thu Mar 19 07:21:36 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:5: error: expected expression before ‘Stack’
+  102 |    *Stack auxiliar = createStack();
+      |     ^~~~~
+exercises.c:105:15: error: ‘auxiliar’ undeclared (first use in this function)
+  105 |          push(auxiliar, top(P1));
+      |               ^~~~~~~~
+exercises.c:105:15: note: each undeclared identifier is reported only once for each function it appears in
+3e5e18b
