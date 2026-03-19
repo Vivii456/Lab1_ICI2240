@@ -199,3 +199,15 @@ exercises.c:105:15: error: ‘auxiliar’ undeclared (first use in this function
       |               ^~~~~~~~
 exercises.c:105:15: note: each undeclared identifier is reported only once for each function it appears in
 3e5e18b
+Thu Mar 19 07:22:24 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:22: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+  102 |    Stack* auxiliar = createStack();
+      |                      ^~~~~~~~~~~
+      |                      create_stack
+exercises.c:102:22: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+2e77adb
