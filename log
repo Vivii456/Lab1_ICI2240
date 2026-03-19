@@ -73,3 +73,14 @@ exercises.c:63:8: note: ‘suma’ was declared here
       |        ^~~~
 cc1: all warnings being treated as errors
 c233055
+Thu Mar 19 07:07:11 PM UTC 2026: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:80:24: error: comparison between pointer and integer [-Werror]
+   80 |          if ((int*)num == elem)
+      |                        ^~
+cc1: all warnings being treated as errors
+245b69e
