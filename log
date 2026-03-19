@@ -171,3 +171,17 @@ Thu Mar 19 07:18:09 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 bfc43ef
+Thu Mar 19 07:20:16 PM UTC 2026: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:5: error: expected expression before ‘Stack’
+  102 |    *Stack auxiliar = createStack();
+      |     ^~~~~
+exercises.c:105:15: error: ‘auxiliar’ undeclared (first use in this function)
+  105 |          push(auxiliar, top(P1));
+      |               ^~~~~~~~
+exercises.c:105:15: note: each undeclared identifier is reported only once for each function it appears in
+121c046
