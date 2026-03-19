@@ -116,3 +116,15 @@ exercises.c:80:18: error: cast from pointer to integer of different size [-Werro
       |                  ^
 cc1: all warnings being treated as errors
 cb83269
+Thu Mar 19 07:09:59 PM UTC 2026: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:80:14: error: dereferencing ‘void *’ pointer [-Werror]
+   80 |          if (*num == elem)
+      |              ^~~~
+exercises.c:80:14: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+ef037a8
