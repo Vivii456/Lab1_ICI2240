@@ -2,3 +2,14 @@ Thu Mar 12 07:13:20 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 5a8081b
+Thu Mar 19 06:57:22 PM UTC 2026: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:51:10: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Wimplicit-function-declaration]
+   51 |          push_back(L, elementos);
+      |          ^~~~~~~~~
+      |          pushBack
+16af13f
