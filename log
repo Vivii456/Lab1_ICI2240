@@ -84,3 +84,14 @@ exercises.c:80:24: error: comparison between pointer and integer [-Werror]
       |                        ^~
 cc1: all warnings being treated as errors
 245b69e
+Thu Mar 19 07:08:26 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:80:10: error: ‘n’ undeclared (first use in this function)
+   80 |          n = (int*)num;
+      |          ^
+exercises.c:80:10: note: each undeclared identifier is reported only once for each function it appears in
+164ad0a
