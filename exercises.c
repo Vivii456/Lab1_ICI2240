@@ -83,7 +83,7 @@ void eliminaElementos(List*L, int elem){
    void* num = first(L);
    while (num != NULL)
       {
-         int n = *((int*)num);
+         int n = *((int*)num); //casteo para obtener el valor de num y poder comparar con elem
          if (n == elem)
          {
             popCurrent(L);
@@ -123,6 +123,27 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   Stack *pila = create_stack();
+   for (int i = 0 ; cadena[i] != '\0' ; i++)
+      {
+         if (cadena[i] == '(' || cadena[i] == '{' || cadena[i] == '[')
+         {
+            push(pila, &cadena[i]);
+         }
+         else if (cadena[i] == ')' || cadena[i] == '}' || cadena[i] == ']')
+         {
+            void *sup = top(pila);
+            if (sup == NULL) return 0;
+            char cierre = *(char*)sup; //casteo para obtener la cadena especifica de sup
+
+            if ((cadena[i] == '(' && cierre == ')') || (cadena[i] == '{' && cierre == '}') || 
+               (cadena[i] == '[' && cierre == ']'))
+            {
+               pop(pila);
+            } else return 0;
+         }
+      }
+   if (top(pila) == NULL) return 1; //significa que la pila está vacía, es decir está balanceada
    return 0;
 }
 
