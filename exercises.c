@@ -136,8 +136,8 @@ int parentesisBalanceados(char *cadena) {
             if (sup == NULL) return 0;
             char ap = *(char*)sup; //casteo para obtener la cadena especifica de sup
 
-            if ((cadena[i] == '(' && ap == ')') || (cadena[i] == '{' && ap == '}') || 
-               (cadena[i] == '[' && ap == ']'))
+            if ((cadena[i] == ')' && ap == '(') || (cadena[i] == '}' && ap == '{') || 
+               (cadena[i] == ']' && ap == '['))
             {
                pop(pila);
             } else return 0;
