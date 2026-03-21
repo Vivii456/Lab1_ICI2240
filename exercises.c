@@ -134,10 +134,10 @@ int parentesisBalanceados(char *cadena) {
          {
             void *sup = top(pila);
             if (sup == NULL) return 0;
-            char cierre = *(char*)sup; //casteo para obtener la cadena especifica de sup
+            char ap = *(char*)sup; //casteo para obtener la cadena especifica de sup
 
-            if ((cadena[i] == '(' && cierre == ')') || (cadena[i] == '{' && cierre == '}') || 
-               (cadena[i] == '[' && cierre == ']'))
+            if ((cadena[i] == '(' && ap == ')') || (cadena[i] == '{' && ap == '}') || 
+               (cadena[i] == '[' && ap == ']'))
             {
                pop(pila);
             } else return 0;
